@@ -1,0 +1,61 @@
+.aboutMe-container {
+    display: flex;
+    background-color: white;
+    color:  black;
+    height: 50vh;
+    padding: 100px 0 100px 0;
+}
+
+.aboutMe-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    padding: 0 100px 0 100px;
+}
+
+.aboutMe-description > h3 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.aboutMe-description > p {
+    line-height: 1.5;
+}
+
+.aboutMe-img {
+    width: 45%;
+    display: flex;
+    align-self: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .aboutMe-container {
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+    }
+
+    .aboutMe-description {
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 20px 50px 20px;
+    }
+
+    .aboutMe-description > h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .aboutMe-img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .aboutMe-img > img {
+        width: 100%;
+    }
+}
