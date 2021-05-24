@@ -8,7 +8,8 @@ const slidesInformation = [
     {
         src: Slide1,
         alt: 'Project 1',
-        desc: 'Project 1'
+        desc: 'Mercadolibre',
+        web: 'https://github.com/ecustiel/ML-income-test'
     },
     {
         src: Slide2,
@@ -23,13 +24,20 @@ const slidesInformation = [
 ]
 
 
+
+
+
 const slides = slidesInformation.map(slide => (
-    <div className='slide-container'>
+   
+    <div   className='slide-container'  >
+        <a href={slide.web} target='_blank'>
         <img src={slide.src} alt={slide.alt} />
+        </a>
         <div className='slide-desc' >
-            <span>{slide.desc}</span>
+            <span >{slide.desc}</span>
         </div>
     </div>
+    
 ))
 
 

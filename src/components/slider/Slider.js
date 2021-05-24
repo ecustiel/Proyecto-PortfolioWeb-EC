@@ -5,6 +5,9 @@ import Slides from './Slides';
 import './Slider.css';
 
 const Slider = () => {
+
+  
+
     return (
         <div className='carousel-container'>
             <div className='carousel-title' >
@@ -13,7 +16,7 @@ const Slider = () => {
 
         <Carousel 
             arrows
-            
+          
             slidesPerPage={3}
             infinite
             animationSpeed={200}
